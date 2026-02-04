@@ -20,7 +20,7 @@ exports.handleShorten = async (req, res) => {
 
   if (existingUrl) {
     return res.render('index', {
-      shortUrl: `http://localhost:3000/${existingUrl.shortcode}`,
+      shortUrl: `https://link-shortner-cgeg.onrender.com/${existingUrl.shortcode}`,
       error: null
     });
   }
@@ -34,7 +34,7 @@ exports.handleShorten = async (req, res) => {
   });
 
   res.render('index', {
-    shortUrl: `http://localhost:3000/${shortcode}`,
+    shortUrl: `https://link-shortner-cgeg.onrender.com/${shortcode}`,
     error: null
   });
 };
