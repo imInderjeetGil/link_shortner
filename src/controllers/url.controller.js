@@ -16,7 +16,7 @@ exports.createShortUrl = async (req,res) =>{
     });
 
     res.json({
-        shortUrl: `http://localhost:3000/${shortcode}`,
+        shortUrl: `https://link-shortner-cgeg.onrender.com/${shortcode}`,
         originalUrl
     });
 };
